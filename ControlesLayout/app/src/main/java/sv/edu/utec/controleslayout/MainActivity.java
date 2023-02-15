@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 Spinner spPais;
@@ -21,10 +22,17 @@ RadioButton rbFem,rbMas,rbOtr;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //EditText
         etNombres=findViewById(R.id.edtNombres);
         etApellidos=findViewById(R.id.edtApellidos);
         etInfo=findViewById(R.id.editTextTextMultiLine);
+        //Spinner
         spPais=findViewById(R.id.spnPais);
+        //Radiobuttons
+        rbFem= findViewById(R.id.rbFemenino);
+        rbMas=findViewById(R.id.rbMasculino);
+        rbOtr=findViewById(R.id.rbOtros);
+
         /* forma 1
         spPais.setSelection(0, false);
         String[]opciones={"Seleccione un Pais","Guatemala","El Salvador","Honduras","Nicaragua","Costa Rica","Panama"};
@@ -68,6 +76,28 @@ RadioButton rbFem,rbMas,rbOtr;
     public void Almacenar(View v){
         String datos="";
         String seleccion = spPais.getSelectedItem().toString();
+        //get traer
+        //set enviar
+        String nombre=etNombres.getText().toString();
+        String apellido=etApellidos.getText().toString();
+        String genero="";
+        String info;
+
+
+       if(rbMas.isChecked()==false && rbMas.isChecked()==false && rbOtr.isChecked()==false)
+       {
+           Toast mensaje= Toast.makeText(this,"seleccione un genero",Toast.LENGTH_SHORT);
+           mensaje.show();
+       }
+       else {
+           if (rbMas.isChecked() == true) {
+               genero = "Masculino";
+           } else if (rbFem.isChecked() == true) {
+               genero = "Femenino";
+           } else {
+               genero = "Otros";
+           }
+       }
 
         if(seleccion.equals("Seleccione un Pais")){
             datos="No selecciono ningun Pais";
@@ -85,7 +115,14 @@ RadioButton rbFem,rbMas,rbOtr;
             datos="Honduras";
             etInfo.append(datos);
         }
-        //etInfo.append("datos");
+
+        info="Los datos ingresados son los siguientes \n"+
+                "Nombre     : "+nombre+"\n"+
+                "Apellido   : "+apellido+"\n"+
+                "Genero     : "+genero +"\n"+
+                "Pais       :  "+datos+ "\n";
+
+        etInfo.append(info);
 //08/02/2023
         }
     }
