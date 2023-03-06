@@ -49,8 +49,8 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="265dp"
-        android:layout_height="41dp"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Digite su nombre"
