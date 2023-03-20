@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCE2E4ED"
+    android:background="@drawable/background2"
     tools:context=".MainActivity">
 
     <ImageView
@@ -43,13 +43,15 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:drawableLeft="@drawable/baseline_person_24"   />
 
     <EditText
         android:id="@+id/edtPassword"
-        android:layout_width="233dp"
-        android:layout_height="47dp"
+        android:layout_width="237dp"
+        android:layout_height="39dp"
         android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -58,15 +60,21 @@
         app:layout_constraintStart_toStartOf="@+id/edtUsuario"
         app:layout_constraintTop_toBottomOf="@+id/edtUsuario" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="234dp"
         android:layout_height="47dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#103BC8 "
         android:text="INGRESAR"
         app:layout_constraintEnd_toEndOf="@+id/edtPassword"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/edtPassword"
         app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
@@ -74,11 +82,11 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="56dp"
         android:text="¿No tienes cuenta?"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/btnIngresar"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.581"
         app:layout_constraintStart_toStartOf="@+id/btnIngresar"
         app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
 
