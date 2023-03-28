@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/nav_fav"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="Favorito"
+        />
+
+    <item android:id="@+id/nav_cam"
+        android:icon="@drawable/baseline_photo_camera_24"
+        android:title="Camara"
+        />
+    <item android:id="@+id/nav_busq"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Buscar"
+        />
+
+
+</menu>

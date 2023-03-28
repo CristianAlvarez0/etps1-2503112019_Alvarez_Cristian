@@ -60,23 +60,30 @@
         app:layout_constraintStart_toStartOf="@+id/edtUsuario"
         app:layout_constraintTop_toBottomOf="@+id/edtUsuario" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tvOlvideContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Olvide contraseña"
+        android:textAlignment="textEnd"
+        android:textColor="#103BC8"
+        app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="234dp"
         android:layout_height="47dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#103BC8 "
         android:text="INGRESAR"
-        app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tvOlvideContraseña"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/edtPassword"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+        app:layout_constraintStart_toStartOf="@+id/tvOlvideContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/tvOlvideContraseña" />
 
     <TextView
         android:id="@+id/textView4"
@@ -84,22 +91,30 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="¿No tienes cuenta?"
+        android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/btnIngresar"
-        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="@+id/btnIngresar"
         app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
 
-    <Button
-        android:id="@+id/btnRegistrate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/tvCrearCuenta"
+        android:layout_width="124dp"
+        android:layout_height="24dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#103BC8"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:linksClickable="true"
         android:onClick="PantallaRegistro"
-        android:text="registrate"
+        android:singleLine="false"
+        android:text="Crear cuenta"
+        android:textAlignment="center"
+        android:textColor="#103BC8"
+        android:textStyle="bold"
+        app:guidelineUseRtl="false"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
