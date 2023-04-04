@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvCrearCue;
     TextView tvOlvideContra;
 
-
+    Button btnMostrarMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         tvCrearCue=findViewById(R.id.tvCrearCuenta);
         tvOlvideContra=findViewById(R.id.tvOlvideContraseña);
 
+        btnMostrarMenu = findViewById(R.id.btnMostrarMenu);
 
         tvCrearCue.setPaintFlags(tvCrearCue.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         tvOlvideContra.setPaintFlags(tvOlvideContra.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
@@ -47,6 +50,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intento);
 
     }
-
 
 }

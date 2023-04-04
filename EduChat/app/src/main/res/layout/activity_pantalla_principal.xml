@@ -39,7 +39,8 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/searchView"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_menu_24" />
+        app:srcCompat="@drawable/baseline_menu_24"
+        />
 
     <TextView
         android:id="@+id/tvChat"
