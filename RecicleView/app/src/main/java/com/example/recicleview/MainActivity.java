@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -28,13 +29,11 @@ public class MainActivity extends AppCompatActivity {
         mrecyclerView.setAdapter(adaptador);
 
 
-
-
-        mrecyclerView.setOnItemClickListener(new AdapterView.OnItemClickListener()
-        {
+        mrecyclerView.setOnHoverListener(new View.OnHoverListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View View, int position, long id) {
-                Toast.makeText(parent.getContext(), "Seleccionar", Toast.LENGTH_LONG).show();
+            public boolean onHover(View v, MotionEvent event) {
+                Toast.makeText(parent.getContext(),"Selecionar",Toast.LENGTH_SHORT).show();
+                return false;
             }
         });
     }
@@ -43,16 +42,67 @@ public class MainActivity extends AppCompatActivity {
 
 
     private ArrayList<Modelo> getListado(){
-        ArrayList<Modelo> modelos = new ArrayList<>();
-        Modelo modelolista = new Modelo();
-        modelolista.setNoombPeli("Ex-Maquina");
-        modelolista.setGeneroPeli("Juan Perez");
-        modelolista.setGeneroPeli("Ciencia Ficcion");
-        modelolista.setImgPeli(R.drawable.ex_maquina);
-        modelolista.setAnioPeli("1999");
-        modelolista.setDuraPeli("108 min");
-        modelos.add(modelolista);
+        ArrayList<Modelo> modelos=new ArrayList<>();
+        Modelo modelista = new Modelo();
+        modelista.setNoombPeli("Ex-Maquina");
+        modelista.setDirecPeli("Juan Perez");
+        modelista.setGeneroPeli("Ciencia ficcion");
+        modelista.setImgPeli(R.drawable.ex_maquina);
+        modelista.setClasifcar(3.45);
+        modelista.setDuraPeli("108 min");
+        modelista.setAnioPeli("1999");
+        modelos.add(modelista);
 
+
+        modelista = new Modelo();
+        modelista.setNoombPeli("La LLegada");
+        modelista.setDirecPeli("Juan Perez");
+        modelista.setGeneroPeli("Ciencia ficcion");
+        modelista.setImgPeli(R.drawable.la_llegada);
+        modelista.setClasifcar(3.45);
+        modelista.setDuraPeli("108 min");
+        modelista.setAnioPeli("1999");
+        modelos.add(modelista);
+
+        modelista = new Modelo();
+        modelista.setNoombPeli("Jumanji");
+        modelista.setDirecPeli("Juan Perez");
+        modelista.setGeneroPeli("Ciencia ficcion");
+        modelista.setImgPeli(R.drawable.jumanji);
+        modelista.setClasifcar(3.45);
+        modelista.setDuraPeli("108 min");
+        modelista.setAnioPeli("1999");
+        modelos.add(modelista);
+
+        modelista = new Modelo();
+        modelista.setNoombPeli("Inter Estelar");
+        modelista.setDirecPeli("Juan Perez");
+        modelista.setGeneroPeli("Ciencia ficcion");
+        modelista.setImgPeli(R.drawable.interestelar);
+        modelista.setClasifcar(3.45);
+        modelista.setDuraPeli("108 min");
+        modelista.setAnioPeli("1999");
+        modelos.add(modelista);
+
+        modelista = new Modelo();
+        modelista.setNoombPeli("Forma de Agua");
+        modelista.setDirecPeli("Juan Perez");
+        modelista.setGeneroPeli("Ciencia ficcion");
+        modelista.setImgPeli(R.drawable.forma_agua);
+        modelista.setClasifcar(3.45);
+        modelista.setDuraPeli("108 min");
+        modelista.setAnioPeli("1999");
+        modelos.add(modelista);
+
+        modelista = new Modelo();
+        modelista.setNoombPeli("Extraordinario");
+        modelista.setDirecPeli("Juan Perez");
+        modelista.setGeneroPeli("Ciencia ficcion");
+        modelista.setImgPeli(R.drawable.extraordinario);
+        modelista.setClasifcar(3.45);
+        modelista.setDuraPeli("108 min");
+        modelista.setAnioPeli("1999");
+        modelos.add(modelista);
 
         return modelos;
     }

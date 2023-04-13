@@ -17,6 +17,10 @@
         <activity
             android:name=".PantallaRegistro"
             android:exported="false" />
+        <activity android:name=".opciones.Configuracion" />
+        <activity android:name=".opciones.Perf" />
+        <activity android:name=".opciones.NuevoGrupo" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

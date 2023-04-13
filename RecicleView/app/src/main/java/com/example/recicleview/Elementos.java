@@ -16,4 +16,5 @@ public class Elementos extends RecyclerView.ViewHolder{
         tvnomPel=itemView.findViewById(R.id.tvTitulo);
         tvGenPeli=itemView.findViewById(R.id.tvGenero);
     }
+
 }

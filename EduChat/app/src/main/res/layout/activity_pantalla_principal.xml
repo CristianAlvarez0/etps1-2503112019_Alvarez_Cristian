@@ -6,42 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".PantallaPrincipal">
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="243dp"
-        android:layout_height="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047">
-
-    </SearchView>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toEndOf="@+id/searchView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/perfil" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="53dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/searchView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_menu_24"
-        />
-
     <TextView
         android:id="@+id/tvChat"
         android:layout_width="wrap_content"
@@ -54,11 +18,11 @@
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="474dp"
+        android:layout_width="362dp"
+        android:layout_height="520dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,9 +31,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tvChat"
         app:layout_constraintVertical_bias="0.182">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <ListView
+            android:id="@+id/lstChats"
             android:layout_width="match_parent"
-            android:layout_height="364dp" />
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 

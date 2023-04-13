@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/app_bar_search"
-        android:icon="@drawable/baseline_search_24"
+        android:icon="@drawable/baseline_search_24_blanco"
         android:title="Search"
         app:actionViewClass="android.widget.SearchView"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/nav_profile"
-        android:icon="@drawable/baseline_person_24"
+        android:icon="@drawable/baseline_person_blanco"
         android:title="Profile"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/nav_home"
+        android:id="@+id/nav_nuevogrup"
         android:title="Nuevo Grupo"
          />
 
     <item
         android:id="@+id/nav_settings"
-        android:title="Settings"
+        android:title="Configuración"
         />
     <item
         android:id="@+id/nav_logout"
-        android:title="Logout"
+        android:title="Salir"
         />
 </menu>

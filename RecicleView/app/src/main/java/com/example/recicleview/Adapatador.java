@@ -35,7 +35,7 @@ public class Adapatador extends RecyclerView.Adapter<Elementos> {
     public void onBindViewHolder(@NonNull Elementos holder, int position) {
         Elementos.tvnomPel.setText(modelos.get(position).getNoombPeli());
         Elementos.tvGenPeli.setText(modelos.get(position).getGeneroPeli());
-        Elementos.imgPelic.setText(modelos.get(position).getImgPeli());
+        Elementos.imgPeli.setText(modelos.get(position).getImgPeli());
 
 
        /* Elementos.tvnomPel.setText(modelos.get(position).getNoombPeli());
