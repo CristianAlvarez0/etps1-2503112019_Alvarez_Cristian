@@ -26,11 +26,11 @@ public class PantallaPrincipal extends AppCompatActivity {
 
 //chat
 
-    String [] ftperfil={"El Salvador","Costa Rica"};
+    String [] ftperfil={"Grupo 1","Grupo 2"};
     ListView lvstChat;
     Integer []ImgChat= {
-            R.drawable.banderaesa,
-            R.drawable.banderacr,
+            R.drawable.ftperfilchat1,
+            R.drawable.ftperfilchat2,
     };
 
 
