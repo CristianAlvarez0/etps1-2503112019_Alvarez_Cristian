@@ -10,17 +10,14 @@
     <FrameLayout
         android:id="@+id/fragmentCont"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/btnNav">
-
-    </FrameLayout>
+        android:layout_height="match_parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btnNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/boton_navegator"
+        android:layout_marginBottom="1dp"
 
-        />
+        app:menu="@menu/boton_navegator" />
 </RelativeLayout>

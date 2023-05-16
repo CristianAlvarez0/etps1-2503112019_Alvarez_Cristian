@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/mensajes"
+            android:icon="@drawable/baseline_message_24"
+            android:title="Mensajes"
+            />
+        <item android:id="@+id/explorar"
+            android:icon="@drawable/baseline_explore_24"
+            android:title="Encontrar"
+            />
+
+        <item android:id="@+id/comentarios"
+            android:icon="@drawable/baseline_add_comment_24"
+            android:title="Comentarios"
+            />
+
+
+    </group>
+
+
+    <item android:title="Redes Sociales">
+        <menu>
+        <item android:id="@+id/enviar"
+            android:icon="@drawable/baseline_send_24"
+            android:title="Enviar"
+            />
+        <item android:id="@+id/compartir"
+            android:icon="@drawable/baseline_share_24"
+            android:title="Compartir"
+            />
+        </menu>
+    </item>
+
+
+</menu>
