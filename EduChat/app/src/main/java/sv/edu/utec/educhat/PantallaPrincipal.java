@@ -13,6 +13,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 import sv.edu.utec.educhat.opciones.Configuracion;
 import sv.edu.utec.educhat.opciones.NuevoGrupo;
 import sv.edu.utec.educhat.opciones.Perf;
@@ -22,31 +24,29 @@ import sv.edu.utec.educhat.opciones.Perf;
 
 public class PantallaPrincipal extends AppCompatActivity {
 
-
-
 //chat
-
-    String [] ftperfil={"Grupo 1","Grupo 2"};
+String [] ftperfil={"Grupo 1","Grupo 2"};
     ListView lvstChat;
     Integer []ImgChat= {
             R.drawable.ftperfilchat1,
             R.drawable.ftperfilchat2,
     };
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_principal);
 
-
         //CHAT
-        AdaptadorChat adaptador = new AdaptadorChat(this, ftperfil,ImgChat);
+
+        AdaptadorChat adaptador = new AdaptadorChat(this, ftperfil,ImgChat );
         lvstChat = findViewById(R.id.lstChats);
         lvstChat.setAdapter(adaptador);
 
+
     }
+
+
     public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater inflater = getMenuInflater();

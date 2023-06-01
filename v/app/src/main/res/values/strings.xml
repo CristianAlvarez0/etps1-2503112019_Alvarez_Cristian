@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="bienvenido_de_vuelta">Bienvenido de vuelta!</string>
+    <string name="inicie_sesion_para_continuar">Inicie sesion para continuar</string>
+    <string name="correo">Correo</string>
+    <string name="contrase_a">contraseña</string>
+    <string name="password" />
+    <string name="iniciar_sesion">Iniciar sesion</string>
+    <string name="crear_una_nueva_cuenta">Crear una nueva cuenta</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="crear_un_nuevo_usuario">Crear un nuevo usuario</string>
+    <string name="a_adir_imagen">Añadir imagen</string>
+    <string name="agregar_imagen">Agregar imagen</string>
+    <string name="nombre">nombre</string>
+    <string name="contrase_aa">Contraseña</string>
+    <string name="confirma_tu_contrase_a">Confirma tu contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="seleccione_un_usuario">Seleccione un usuario</string>
+    <string name="nombre_de_la_app">nombre de la app</string>
+    <string name="escribe_un_mensaje">Escribe un mensaje</string>
+</resources>

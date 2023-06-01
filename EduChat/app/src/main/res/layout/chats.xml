@@ -32,6 +32,16 @@
             android:text="TextView"
             app:layout_constraintStart_toEndOf="@+id/imgvPerfil"
             tools:layout_editor_absoluteY="32dp" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="*********************************"
+            app:layout_constraintStart_toEndOf="@+id/imgvPerfil"
+            app:layout_constraintTop_toBottomOf="@+id/tvPersonaChat" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
